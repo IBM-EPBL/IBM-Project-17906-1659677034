@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Underline Link Hover</title>
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="style3.css">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+.nav{
+    display: flex;
+    padding: 20px;
+    background-color:#2874F0 ;
+    justify-content: space-around;
+}
+.nav li a{
+    color:whitesmoke;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 10px 20px;
+
+}
+.nav li{
+    list-style: none
+
+    ;
+}
+.nav li a:hover{
+
+    background-color: whitesmoke;
+    color:#2874F0 ;
+
+    border-radius: 5px;
+}
+
+</style>
+<body>
+    <nav class="nav">
+       <li><a href="/AdminHome">Home</a></li>
+					<li><a href="/AdminDonorInfo" >DonorInfo</a></li>
+
+					<li><a href="/">Logout</a></li>
+
+    </nav>
+    <img src="1.jpg" alt="" height="500px" width="100%"
+style="background-color:lightgray;">
+
+ <br><br>
+<!-- header -->
+
+<!-- //banner -->
+<div class="about all_pad">
+	<div class="container">
+		<h3 class="title">Donor  Information!</h3>
+
+		 <form id="form1" name="form1" method="post" action="/userinfo">
+	 <table width="80%" border="1" align="center">
+              <tr>
+
+
+
+                  <td bgcolor="#3399FF"><div align="center" class="style5"><strong>Name</strong></div></td>
+                <td bgcolor="#3399FF"><div align="center" class="style5"><strong>Gender</strong></div></td>
+                <td bgcolor="#3399FF"><div align="center" class="style5"><strong>Age</strong></div></td>
+                <td bgcolor="#3399FF"><div align="center" class="style5"><strong>Email</strong></div></td>
+
+                <td bgcolor="#3399FF"><div align="center" class="style5"><strong>Phone</strong></div></td>
+				   <td bgcolor="#3399FF"><div align="center" class="style5"><strong>Address</strong></div></td>
+				   <td bgcolor="#3399FF"><div align="center" class="style5"><strong>BloodGroup</strong></div></td>
+
+				    <td bgcolor="#3399FF"><div align="center" class="style5"><strong>HealthIssues</strong></div></td>
+
+              </tr>
+			  {% for item in data %}
+              <tr>
+
+                <td><div align="center">{{item[1]}}</div></td>
+
+                <td><div align="center">{{item[2]}}</div></td>
+                <td><div align="center">{{item[3]}}</div></td>
+                <td><div align="center">{{item[4]}}</div></td>
+
+                <td><div align="center">{{item[5]}}</div></td>
+				     <td><div align="center">{{item[6]}}</div></td>
+				  <td><div align="center">{{item[7]}}</div></td>
+				   <td><div align="center">{{item[8]}}</div></td>
+
+              </tr>
+			  {% endfor %}
+
+            </table>
+
+
+
+</form>
+
+	</div>
+</div>
+
+<!-- contact -->
+ <br><br>
+<footer style="padding:20px;background-color: #2874F0;">
+	<p style="text-align: center;color:white;">Copyright to custo@gmail.com</p>
+</footer>
+</body>
+</html>
