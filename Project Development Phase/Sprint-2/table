@@ -1,0 +1,34 @@
+CREATE TABLE donortb (
+
+  Name varchar(250) NOT NULL,
+  Mobile varchar(250) NOT NULL,
+  Email varchar(250) NOT NULL,
+  UserName varchar(250) NOT NULL,
+  Password varchar(250) NOT NULL
+
+)
+
+CREATE TABLE personltb (
+
+  Name varchar(250) NOT NULL,
+ Gender varchar(250) NOT NULL,
+  Age varchar(250) NOT NULL,
+  Email varchar(250) NOT NULL,
+  Phone varchar(250) NOT NULL,
+  Address varchar(500) NOT NULL,
+  blood varchar(250) NOT NULL,
+  Health varchar(250) NOT NULL,
+  UserName varchar(50) NOT NULL
+)
+
+
+CREATE TABLE regtb (
+  Name varchar(250) NOT NULL,
+  Gender varchar(250) NOT NULL,
+  Age varchar(250) NOT NULL,
+ Email varchar(250) NOT NULL,
+  Mobile varchar(250) NOT NULL,
+  Address varchar(250) NOT NULL,
+  UserName varchar(250) NOT NULL,
+  Password varchar(250) NOT NULL
+)
